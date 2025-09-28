@@ -1,0 +1,34 @@
+{
+  "placeholderImages": [
+    {
+      "id": "author-ana-silva",
+      "description": "Avatar for author Ana Silva",
+      "imageUrl": "/images/profile.jpg",
+      "imageHint": "woman portrait"
+    },
+    {
+      "id": "post-welcome",
+      "description": "Welcome post header image",
+      "imageUrl": "https://images.unsplash.com/photo-1623613171239-f46373f45eaf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Y29sb3JmdWwlMjBwZW5jaWxzfGVufDB8fHx8MTc1ODk4NjMwNXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "colorful pencils"
+    },
+    {
+      "id": "post-painting-dots-cover",
+      "description": "Cover image for kids painting with dots post",
+      "imageUrl": "/images/image_57f3c1.jpg",
+      "imageHint": "kids painting"
+    },
+    {
+      "id": "post-spring-explorers-cover",
+      "description": "Cover image for kids exploring nature in spring post",
+      "imageUrl": "/images/image_57f66d.jpg",
+      "imageHint": "kids nature"
+    },
+    {
+      "id": "post-collective-painting-cover",
+      "description": "Cover image for kids doing a collective painting post",
+      "imageUrl": "/images/image_57f689.jpg",
+      "imageHint": "collective painting"
+    }
+  ]
+}
