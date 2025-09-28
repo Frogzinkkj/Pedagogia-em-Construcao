@@ -5,9 +5,12 @@ import { BookHeart, Menu, X } from 'lucide-react';
 
 import { useState, useEffect, type MouseEvent } from 'react';
 
+import { usePathname } from 'next/navigation';
+
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isAtTop, setIsAtTop] = useState(true);
+  const pathname = usePathname();
 
 
   useEffect(() => {
@@ -60,7 +63,16 @@ export function Header() {
           <nav className="hidden md:flex">
             <ul className="flex items-center gap-6 text-md font-medium text-foreground">
               <li><Link href="/" className="hover:text-primary transition-colors">Início</Link></li>
-              <li><Link href="/#atividades" onClick={handleLinkClick} className="hover:text-primary transition-colors">Atividades</Link></li>
+              <li><Link href="/#atividades" 
+                  onClick={(e) => {
+                    if (pathname === '/') {
+                      handleLinkClick(e);
+                    }
+                  }} 
+                  className="hover:text-primary transition-colors">
+                    Atividades
+                  </Link>
+                </li>
               <li><Link href="/educators/1" className="hover:text-primary transition-colors">Sobre Mim</Link></li>
             </ul>
           </nav>
