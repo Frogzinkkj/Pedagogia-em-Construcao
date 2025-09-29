@@ -2,11 +2,11 @@
 import type { ImagePlaceholder } from './placeholder-images';
 import { PlaceHolderImages } from './placeholder-images';
 
-// Helper function to get an image by ID
+
 const getImage = (id: string): ImagePlaceholder => {
   const image = PlaceHolderImages.find((img) => img.id === id);
   if (!image) {
-    // Return a default or throw an error
+    
     return {
       id: 'default',
       description: 'Default image',
@@ -52,7 +52,6 @@ export interface Comment {
 }
 
 
-// Mock Data
 export const authors: Author[] = [
   {
     id: '1',
@@ -97,7 +96,7 @@ export const posts: Post[] = [
         skill: 'Metodologia',
         ageGroup: 'Educadores',
         subject: 'Pedagogia',
-        publishDate: '2024-08-01',
+        publishDate: '2025-09-25',
         image: getImage('post-welcome'),
     },
     {
@@ -121,7 +120,7 @@ export const posts: Post[] = [
         skill: 'Coordenação Motora',
         ageGroup: '3-5 anos',
         subject: 'Artes Visuais',
-        publishDate: '2024-08-18',
+        publishDate: '2025-05-7',
         image: getImage('post-painting-dots-cover'),
     },
     {
@@ -141,7 +140,7 @@ export const posts: Post[] = [
         skill: 'Criatividade',
         ageGroup: '4-6 anos',
         subject: 'Ciências Naturais',
-        publishDate: '2024-08-22',
+        publishDate: '2025-09-26',
         image: getImage('post-spring-explorers-cover'),
     },
     {
@@ -161,7 +160,7 @@ export const posts: Post[] = [
         skill: 'Criatividade',
         ageGroup: '3-6 anos',
         subject: 'Expressão Corporal',
-        publishDate: '2024-08-25',
+        publishDate: '2025-05-7',
         image: getImage('post-collective-painting-cover'),
     },
 ];
